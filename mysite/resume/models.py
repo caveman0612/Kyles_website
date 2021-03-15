@@ -1,3 +1,5 @@
 from django.db import models
+from django.apps import AppConfig
 
-# Create your models here.
+class ResumeConfig(AppConfig):
+    pass
