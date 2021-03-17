@@ -32,18 +32,19 @@
         }
     </style>
 
-
     <title>
         {% block title %} kyle's website {% endblock %}
     </title>
 </head>
+
 <body>
     <div class="sidenav">
-		<a href="/main/">landing page</a>
-		<a href="/main/pdf_resume/">resume</a>
-		<a href="/main/projects/">projects</a>
-		<a href="/stocks">stocks</a>
-	</div>
+        <a href="/stocks">stocks</a>
+		<a href="/">landing page</a>
+		<a href="/pdf_resume/">resume</a>
+		<a href="/projects/">projects</a>
+
+    </div>
     <div id="content", name="content", class="main">
         {%block content %} {% endblock %}
     </div>
