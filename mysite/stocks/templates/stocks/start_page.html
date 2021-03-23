@@ -2,4 +2,22 @@
 
 {% block title %} start page {% endblock %}
 
-{% block content %} <h1> stock start page for kyle website </h1> {% endblock %}
+{% block content %}
+
+<h1> Add a company </h1>
+
+<form action="/your_name/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+<!--<label for="your_name">Your name: </label>-->
+<!--<input id="your_name" type="text" name="your_name" maxlength="100" required>-->
+
+<!--<form action="/your-name/" method="post">-->
+<!--    <label for="your_name">Your name: </label>-->
+<!--    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">-->
+<!--    <input type="submit" value="OK">-->
+<!--</form>-->
+{% endblock %}
