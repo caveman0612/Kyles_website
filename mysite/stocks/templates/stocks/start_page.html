@@ -1,3 +1,5 @@
+from.models import ListOfCompanies, Company
+
 {% extends 'stocks/base_S.html' %}
 
 {% block title %} start page {% endblock %}
@@ -6,11 +8,15 @@
 
 <h1> Add a company </h1>
 
-<form action="/your_name/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+
+{% endblock %}
+
+
+<!--<form action="/your_name/" method="post">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form }}-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
 
 <!--<label for="your_name">Your name: </label>-->
 <!--<input id="your_name" type="text" name="your_name" maxlength="100" required>-->
@@ -20,4 +26,3 @@
 <!--    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">-->
 <!--    <input type="submit" value="OK">-->
 <!--</form>-->
-{% endblock %}
