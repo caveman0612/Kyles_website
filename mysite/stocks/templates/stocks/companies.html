@@ -3,13 +3,17 @@
 {% block title %} start page {% endblock %}
 
 {% block content %}
-<h1>{{ls.name}}</h1>
+<h1> list of companies </h1>
 <ul>
-    {% for item in ls.company_set.all %}
     <li>
-        {{item.text}}
+        <a href="/stocks/short_list"> short list</a>
     </li>
-    {% endfor %}
+    <li>
+        <a href="/stocks/short_list"> long hold</a>
+    </li>
+    <li>
+        <a href="/stocks/short_list"> day trading</a>
+    </li>
 </ul>
 
 
