@@ -51,3 +51,4 @@ def start_page(response):
 
 def company_name(response):
     return render(response, "stocks/company_name.html")
+
