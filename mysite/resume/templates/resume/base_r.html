@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    {% block head %} {% endblock %}
+
     <style type="text/css">
 
     .sidenav {
@@ -28,6 +31,7 @@
 
         {% block style %} {% endblock %}
     </style>
+
     <title>
         {% block title %} kyle's website {% endblock %}
     </title>
