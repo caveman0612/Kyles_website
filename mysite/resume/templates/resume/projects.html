@@ -1,12 +1,15 @@
 {% extends 'resume/base_r.html' %}
 
-{% block head %}
-    <link rel="stylesheet" href="resume/projects.css">
+
+{% block head %} 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'projects.css'%}">
 {% endblock %}
+
+    
 
 
 {% block content %}
-
 <h1> this is the project page </h1>
 <div class="project_one">
     <h2>Project One: <a href="/stocks">stocks</a></h2>
@@ -20,10 +23,5 @@
 <div class="project_four">
 
 </div>
-
-
-
-
-
 
 {% endblock %}
