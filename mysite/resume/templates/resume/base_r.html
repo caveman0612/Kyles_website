@@ -3,31 +3,9 @@
 <head>
 
     {% block head %} {% endblock %}
-    <style type="text/css">
 
-        .sidenav {
-            height:30px;
-            width:100%;
-            background-color:#ABCAFD;
-        }
-
-        .sidenav a {
-            padding:6px 8px 6px 16px;
-            text-decoration: none;
-            font-size:25px;
-            color: #000000;
-            display:inline;
-
-        }
-
-        .sidenav a:hover{
-            color: #f1f1f1;
-        }
-
-        .main{
-            padding: 0px 10px;
-        }
-    </style>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'base_r.css'%}">
 
     <title>
         kyles website
